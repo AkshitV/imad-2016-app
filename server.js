@@ -10,27 +10,6 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/article-one', function(req,res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-
-});
-app.get('/article-two', function(req,res) {
-    res.send('article two was req and will be served');
-
-});
-app.get('/article-three', function(req,res) {
-    res.send('article three was req and will be served');
-
-});
-
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-
-app.get('/ui/photo.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'photo.jpg'));
-});
-
 app.get('/ui/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css/bootstrap.css', 'bootstrap.css'));
 });
